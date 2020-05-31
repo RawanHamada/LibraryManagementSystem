@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<FlowPane alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="555.0" prefWidth="709.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="LoginScene.ManagementBorrowersController">
+   <children>
+      <VBox alignment="CENTER" prefHeight="555.0" prefWidth="709.0" spacing="15.0" style="-fx-background-color: #fab4f5;">
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </padding>
+         <children>
+            <HBox alignment="CENTER" prefHeight="391.0" prefWidth="635.0" spacing="10.0">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="357.0" prefWidth="227.0">
+                     <children>
+                        <Label text="Borrow Setting" textFill="#eb0d92">
+                           <font>
+                              <Font name="System Bold" size="22.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="10.0" />
+                           </VBox.margin>
+                        </Label>
+                        <GridPane hgap="10.0" maxHeight="-Infinity" prefHeight="212.0" prefWidth="302.0">
+                          <columnConstraints>
+                            <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" maxWidth="112.0" minWidth="10.0" prefWidth="93.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="150.0" minWidth="10.0" prefWidth="140.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <Label text="ID:">
+                                 <padding>
+                                    <Insets right="50.0" />
+                                 </padding></Label>
+                              <Label text="First Name:" GridPane.rowIndex="1">
+                                 <padding>
+                                    <Insets right="5.0" />
+                                 </padding></Label>
+                              <Label text="Last Name:" GridPane.rowIndex="2">
+                                 <padding>
+                                    <Insets right="5.0" />
+                                 </padding></Label>
+                              <TextField fx:id="txtFieldID" GridPane.columnIndex="1">
+                        
+                        </TextField>
+                              <TextField fx:id="txtFirstName" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                          
+                        </TextField>
+                              <TextField fx:id="txtLastName" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                           
+                        </TextField>
+                              <TextField fx:id="txtMobile" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                              <TextField fx:id="txtEmail" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                              <TextField fx:id="txtAddress" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                              <Label text="Mobile:" GridPane.rowIndex="3">
+                                 <padding>
+                                    <Insets right="25.0" />
+                                 </padding>
+                              </Label>
+                              <Label text="Email:" GridPane.rowIndex="4">
+                                 <padding>
+                                    <Insets right="33.0" />
+                                 </padding>
+                              </Label>
+                              <Label text="Address:" GridPane.rowIndex="5">
+                                 <padding>
+                                    <Insets right="20.0" />
+                                 </padding>
+                              </Label>
+                              <Label text="Gender:" GridPane.rowIndex="6">
+                                 <padding>
+                                    <Insets right="22.0" />
+                                 </padding>
+                              </Label>
+                              <TextField fx:id="txtGender" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                           </children>
+                        </GridPane>
+                        <TextField fx:id="searchTxt" minWidth="-Infinity" prefHeight="25.0" prefWidth="150.0" promptText="Search">
+                           <VBox.margin>
+                              <Insets left="20.0" top="10.0" />
+                           </VBox.margin></TextField>
+                        <HBox alignment="CENTER" prefHeight="28.0" prefWidth="196.0">
+                           <children>
+                              <Button fx:id="buttonAdd" mnemonicParsing="false" onAction="#buttonAddHandle" prefHeight="30.0" prefWidth="90.0" stylesheets="@../styles.css" text="Add" textFill="WHITE">
+                    
+                  </Button>
+                              <Button fx:id="buttonUpdate" mnemonicParsing="false" onAction="#buttonUpdateHandle" prefHeight="30.0" prefWidth="90.0" stylesheets="@../styles.css" text="Update" textFill="WHITE">
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </Button>
+                           </children>
+                           <padding>
+                              <Insets top="20.0" />
+                           </padding>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="44.0" prefWidth="196.0">
+                           <children>
+                              <Button fx:id="buttonSearch" mnemonicParsing="false" onAction="#buttonSearchHandle" prefHeight="30.0" prefWidth="90.0" stylesheets="@../styles.css" text="Search" textFill="WHITE">
+                     
+                    
+                  </Button>
+                              <Button fx:id="buttonDelete" mnemonicParsing="false" onAction="#buttonDeleteHandle" prefHeight="30.0" prefWidth="90.0" stylesheets="@../styles.css" text="Delete" textFill="WHITE">
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </Button>
+                           </children>
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <Button fx:id="buttonClear" mnemonicParsing="false" onAction="#buttonClearHandle" prefHeight="30.0" prefWidth="90.0" stylesheets="@../styles.css" text="Clear" textFill="WHITE">
+                           <VBox.margin>
+                              <Insets top="8.0" />
+                           </VBox.margin></Button>
+                     </children>
+                  </VBox>
+                  <TableView fx:id="tableView" prefHeight="391.0" prefWidth="400.0" style="-fx-font-size: 14px;">
+                    <columns>
+                      <TableColumn fx:id="tcID" prefWidth="24.0" text="ID" />
+                      <TableColumn fx:id="tcfFName" prefWidth="82.0" text="First Name" />
+                        <TableColumn fx:id="tcLName" prefWidth="78.0" text="Last Name" />
+                        <TableColumn fx:id="tcMobile" maxWidth="75.0" prefWidth="57.0" text="Mobile" />
+                        <TableColumn fx:id="tcEmail" prefWidth="42.0" text="Email" />
+                        <TableColumn fx:id="tcAddress" maxWidth="83.0" prefWidth="68.0" text="Address" />
+                        <TableColumn fx:id="tcGender" prefWidth="90.0" text="Gender" />
+                    </columns>
+                     <HBox.margin>
+                        <Insets left="5.0" />
+                     </HBox.margin>
+                  </TableView>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+               <padding>
+                  <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+               </padding>
+               <children>
+                  <Button fx:id="buttonbackbook" mnemonicParsing="false" onAction="#buttonbackbookHandle" prefHeight="30.0" prefWidth="191.0" stylesheets="@../styles.css" text="Back to Book Setting" textFill="WHITE" />
+                  <Button fx:id="buttongomanage" layoutX="283.0" layoutY="45.0" mnemonicParsing="false" onAction="#buttongomanageHandle" prefHeight="30.0" prefWidth="272.0" stylesheets="@../styles.css" text="Go to Management borrower books" textFill="WHITE" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</FlowPane>

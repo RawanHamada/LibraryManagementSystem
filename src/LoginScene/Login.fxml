@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<FlowPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="LoginScene.LoginController">
+   <children>
+      <VBox alignment="CENTER" prefHeight="401.0" prefWidth="601.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="51.0" prefWidth="601.0">
+               <children>
+                  <Label prefHeight="27.0" prefWidth="364.0" text="Welcome to Library Management  System" textFill="#f81298">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="60.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="59.0" prefWidth="601.0">
+               <children>
+                  <Label fx:id="usernameLabel" prefHeight="17.0" prefWidth="90.0" text="User name:">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="usernameText" />
+               </children>
+               <VBox.margin>
+                  <Insets bottom="30.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="82.0" prefHeight="51.0" prefWidth="601.0">
+               <children>
+                  <Label fx:id="passLabel" prefHeight="17.0" prefWidth="88.0" text="Password: ">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <PasswordField fx:id="passwordText" />
+               </children>
+            </HBox>
+            <Button fx:id="loginbutton" mnemonicParsing="false" onAction="#loginbuttonHandle" style="-fx-background-color: pink;" text="Login" textFill="#dd0060">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+   </children>
+</FlowPane>

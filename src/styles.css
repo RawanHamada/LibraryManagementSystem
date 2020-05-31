@@ -1,0 +1,23 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : ٢٠‏/٠٤‏/٢٠٢٠, ١٠:٥٣:٤٣ م
+    Author     : jit
+*/
+.button{
+    -fx-text-fill: white;
+    -fx-font-size:14px;
+    -fx-font-weight: bold;
+    -fx-background-color: linear-gradient(#d406ae,#f505d9);
+}
+.button:hover{
+    -fx-background-color: linear-gradient(#a86777,#ed5c80);
+    
+}
+.scene {
+    -fx-background-image: url('library.jpg');
+}
+ 
