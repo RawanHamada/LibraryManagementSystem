@@ -1,0 +1,14 @@
+The Borrower 3 borrow A Book ID 10 from 2020-11-20 To 2020-11-30
+-----------------
+Delete Book : Book{id=90, name=s, description=s}
+---------------------
+Updating Book From Book{id=13, name=gfgdhdg, description=s} To Book{id=13, name=ahmed, description=s}
+---------------------
+Adding BookBook{id=20, name=Data Structure, description=ssss}
+---------------------
+Adding BorrowerBorrowers{id=6, firstName=s, lastName=s, mobile=33, email=s, address=s, gender=f}
+---------------------
+Delete Borrower : Borrowers{id=99, firstName=aa, lastName=aa, mobile=88, email=aa, address=ss, gender=f}
+---------------------
+Search Operation {s}: Match result with Book [ Book{id=10, name=s, description=s} ]
+Search Operation {s}: Match result with Book [ Book{id=11, name=s, description=ssds} ]
